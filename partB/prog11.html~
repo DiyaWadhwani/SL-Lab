@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<script language = "javascript" >
+				var obj1 = { "Detective" : "Hercule Poirot", "Author" : "Agatha Christie" };
+				document.write("<h1>JSON with JavaScript example</h1>");
+				document.write("<br>");
+				document.write("<h3>Detective = " + obj1.Detective + "</h3>");
+				document.write("<h3>Author = " +obj.Author + "</h3>");
+				
+				var obj2 = {"Series" : "Famous Five" , "Author" : "Enid Blyton" };
+				document.write("<br>");
+				document.write("<h3>Series = " + obj2.Series +"</h3>");
+				document.write("<h3>Author = " + obj2.Author +"</h3>");
+				
+				document.write("<hr/>");
+				document.write(obj1.Detective + "Detective Stories Author is " + obj1.Author);
+				document.write(<hr/>");
+				
+			</script>
+		</head>
+	<body>
+	</body>
+</html>
+
+	
