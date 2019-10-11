@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Asgn5</title>
+    <script type="text/javascript">
+        function submitted() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var rs = [];
+            for (i = n1; i <= n2; i++) {
+                if (i % 2 != 0)
+                    rs.push(i);
+            }
+            document.getElementById("result").innerHTML = rs;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Enter 1st number:<input type="number" id="num1" /><br>
+        Enter 2nd number:<input type="number" id="num2" /><br>
+        <input type="button" onClick="submitted()" value="Submit" /><br>
+    </form>
+    <p id="result"></p>
+</body>
+
+</html>
+
+

@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Asgn4</title>
+    <script type="text/javascript">
+        function submitted() {
+            var d = document.getElementById("day").value;
+            var m = document.getElementById("month").value;
+            var y = document.getElementById("year").value;
+            var dob = new Date(y, m - 1, d);
+            var today = new Date();
+            var rs = today.getTime() - dob.getTime();
+            rs = Math.floor(rs / (1000 * 60 * 60 * 24 * 365));
+            document.getElementById("result").innerHTML = rs;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Enter day:<input type="number" id="day" /><br>
+        Enter month:<input type="number" id="month" /><br>
+        Enter year:<input type="number" id="year" /><br>
+        <input type="button" onClick="submitted()" value="Submit" /><br>
+    </form>
+    Age:
+    <p id="result"></p>
+</body>
+
+</html>
+
+

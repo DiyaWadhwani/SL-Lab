@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Asgn3</title>
+    <script type="text/javascript">
+        function submitted() {
+            var s = document.getElementById("Str").value;
+            var h = Math.floor(s / 60);
+            var m = s % 60;
+            var rs = h + ":" + m;
+            document.getElementById("result").innerHTML = rs;
+        }
+    </script>
+</head>
+
+<body>
+    Enter time:
+    <form>
+        <input type="number" id="Str" /><br>
+        <input type="button" onClick="submitted()" value="Submit" /><br>
+    </form>
+    <p id="result"></p>
+</body>
+
+</html>

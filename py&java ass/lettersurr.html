@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Asgn2</title>
+    <script type="text/javascript">
+        function submitted() {
+            var s = document.getElementById("Str").value;
+            var rs = true;
+            var count = 0;
+            var alpha = /[a-z]/i;
+            if (alpha.test(s[0]) || alpha.test(s[s.length - 1]))
+                rs = false;
+            else {
+                for (i=1;i< s.length - 1;i++) {
+                    if (alpha.test(s[i])) {
+                        count++;
+                        if (s[i - 1] === "+" && s[i + 1] === "+")
+                            continue;
+                        else {
+                            rs = false;
+                            break;
+                        }
+                    }
+                }
+            }
+            document.getElementById("result").innerHTML = rs;
+        }
+    </script>
+</head>
+
+<body>
+    Enter string:
+    <form>
+        <input type="text" id="Str" /><br>
+        <input type="button" onClick="submitted()" value="Submit" /><br>
+    </form>
+    <p id="result"></p>
+</body>
+
+</html>
