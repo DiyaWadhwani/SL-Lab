@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        var cars = [{
+            "model": "v2",
+            "name": "corolla",
+            "price": "2000000",
+            "year": "2018"},
+            {
+            "model": "v1",
+            "name": "CyberTruck",
+            "price": "3500000",
+            "year": "2019"},
+            {
+            "model": "v3",
+            "name": "Maruti800",
+            "price": "100000",
+            "year": "2009"
+            }]
+        function display() {
+            var x = "<br>Car list<br><br>";
+            j=0;
+            for (i in cars) {
+                x += "<p id=\"m"+j+"\" onmouseover=details("+j+")>"+cars[i].name+"</p>";
+                j++;
+            }
+            document.getElementById("fordisplay").innerHTML = x;
+        }
+        function submited() {
+            var n = document.getElementById("Name").value;
+            var y = document.getElementById("Year").value;
+            var d = document.getElementById("Price").value;
+            obj = {
+                name: n,
+                price: d,
+                year:y
+            }
+            cars.push(obj);
+        }
+        function details(j){
+            var y="Name: "+cars[j].name+"<br>Year: "+cars[j].year+"<br>Price: "+cars[j].price+"<br>";
+            var pid="m"+j;
+            document.getElementById(pid).innerHTML=y;
+        }
+    </script>
+    <title>Cars</title>
+</head>
+
+<body>
+    Enter car details
+    <form>
+        Name: <input type="text" id="Name" /><br>
+        Year: <input type="number" id="Year" /><br>
+        Price: <input type="text" id="Director" /><br>
+        <input type="button" onClick="submited()" value="Submit" /><br>
+        <input type="button" onClick="display()" value="Display cars" /><br>
+    </form>
+    <div id="fordisplay" ></div>
+</body>
+
+</html>
