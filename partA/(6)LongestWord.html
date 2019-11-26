@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Longest Word
+        </title>
+        <script type = "text/javascript">
+        </script>
+    </head>
+    <body>
+    	<h3 style = "text-align:center">Find the length of the longest word in a sentence
+        </h3><br>
+    	<form>
+        	Enter a sentence : <input type = "text" id = "str" /><br><br>
+            <input type = "button" onclick = "longlen()" value = "Submit" />
+         </form>
+         <script>
+         	function longlen()
+            	{
+                 var s=document.getElementById("str").value;
+                 var words=[];
+                 words=s.split(" ");
+                 var len=0;
+                 for(i=0; i<words.length; i++)
+                 	{
+                     if(words[i].length > len)
+                     	len=words[i].length;
+                     }
+                  document.getElementById("res").innerHTML = len;
+                }
+          </script>
+         <p> Length of the longest word :
+         	<span id="res">
+            </span>
+         </p>
+    </body>
+</html>
