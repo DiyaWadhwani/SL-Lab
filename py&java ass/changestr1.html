@@ -1,37 +1,40 @@
 <html>
-	<head>
-		<title>Changing a string</title>
-		<script type="text/javascript">
-			function submit()
-				{
-				 var s=document.getElementById("Str").value;
-				 var nl="";
-				 var vowels={a:0,e:1,i:2,o:3,u:4};
-				 for (i in s)
-				 	{
-				 	 if(s[i]=="z")
-				 		 nl+="A";
-				 	 else if (s[i]=="Z")
-				 	 	 nl+="a";
-				 	 else
-				 	 	{
-				 		 temp=String.fromCharCode(s.charCodeAt(i)+1);
-				 		 if(temp in vowels)
-				 		 	nl+=temp.toUpperCase();
-				 		 else
-				 		 	nl+=temp;
-				 		 }
-				 	}
-				 document.getElementById("result").innerHTML=nl;
-				}
-			</script>
-	</head>
-	<body>
-		Enter string :
-			<form>
-				<input type="text" id="Str" /><br>
-				<input type="button" onClick"sumbit()" value="Submit" /><br>
-			</form>
-			<p id="result"></p>
-	</body>
+
+<head>
+    <title>Asgn1</title>
+    <script type="text/javascript">
+        function submitted() {
+            var s = document.getElementById("Str").value;
+            var rs = "";
+            var vowels = { a: 0, e: 1, i: 2, o: 3, u: 4 };
+            var alpha = /[a-z]/i;
+            for (i in s) {
+                if (alpha.test(s[i])) {
+                    if (s[i] == "z" || s[i] == "Z")
+                        rs += "A";
+                    else {
+                        temp = String.fromCharCode(s.charCodeAt(i) + 1);
+                        if (temp in vowels)
+                            rs += temp.toUpperCase();
+                        else
+                            rs += temp;
+                    }
+                }
+                else
+                    rs += s[i];
+            }
+            document.getElementById("result").innerHTML = rs;
+        }
+    </script>
+</head>
+
+<body>
+    Enter string:
+    <form>
+        <input type="text" id="Str" /><br>
+        <input type="button" onClick="submitted()" value="Submit" /><br>
+    </form>
+    <p id="result"></p>
+</body>
+
 </html>
