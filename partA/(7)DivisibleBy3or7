@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Divisibility by 7 or 3
+    </title>
+    <script type = "text/javascript">
+    </script>
+  </head>
+  <body>
+    <h3 style = "text-align:center"> Check divisibility of a number
+    </h3><br>
+    <form>
+      Enter number : <input type = "text" id = "num" /><br><br>
+      <input type = "button" onClick = "test()" value = "Divisible by 3 or 7" />
+    </form>
+    <script>
+      function test()
+        {
+         var x=document.getElementById("num").value;
+         if(x % 3 == 0 || x % 7 == 0)
+          document.getElementById("result").innerHTML = true;
+         else
+          document.getElementById("result").innerHTML = false;
+        }
+    </script>
+    <p>Result is :
+      <span id="result">
+      </span>
+    </p>
+  </body>
+</html>
