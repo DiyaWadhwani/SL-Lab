@@ -1,20 +1,19 @@
-<span style="font-family: 'Lucida Console'; size=20">
-Scripting Lab Programs Submission
+#Scripting Lab Programs Submission
 
-(under Department of ISE, Ramaiah Institute of Technology)
+###(under Department of ISE, Ramaiah Institute of Technology)
 
-USN : 1MS17IS041
+##USN : 1MS17IS041
 
-Name : Diya Deepak Wadhwani
+##Name : Diya Deepak Wadhwani
 
-Section : 5A
+##Section : 5A
 
-Submitted to Dr. Mydhili K Nair (Faculty Coordinator)
+##Submitted to Dr. Mydhili K Nair (Faculty Coordinator)
 
-List of programs
+##List of programs
 </span>
 
-This repository contains all javascript and python programs required for the course
+**This repository contains all javascript and python programs required for the course**
 
 partA :
 
