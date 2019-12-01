@@ -1,4 +1,4 @@
-<span style="font-family: 'Lucida Console';">foo</span>
+<span style="font-family: 'Lucida Console'; size=20">
 Scripting Lab Programs Submission
 
 (under Department of ISE, Ramaiah Institute of Technology)
@@ -12,7 +12,7 @@ Section : 5A
 Submitted to Dr. Mydhili K Nair (Faculty Coordinator)
 
 List of programs
-
+</span>
 
 This repository contains all javascript and python programs required for the course
 
