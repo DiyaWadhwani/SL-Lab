@@ -10,23 +10,23 @@
 
 ## Submitted to Dr. Mydhili K Nair (Faculty Coordinator)
 
-### List of programs
+## List of programs
 </span>
 
 **This repository contains all javascript and python programs required for the course**
 
-partA :
+**partA :**
 
   javascriptProgs :
   
     1. ChangeStr.html
-      To change a string, encryption
+      * To change a string, encryption*
       
     2. LetterSurr.html
-      To check whether a letter is surrounded with + symbols, returns true or false
+      *To check whether a letter is surrounded with + symbols, returns true or false*
     
     3. HourMin.html
-      To convert given time to hour:min
+      To convert given time to hour:min*
     
     4. Age.html
       To find the age of user, takes DOB as input
