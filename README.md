@@ -107,14 +107,18 @@
     program to count frequency of words in a file (highonlife.txt)
     
 **flaskProgs :**
+
   1. ATM
-    Design a HTML form that displays user's current balance, an input field to enter amount and buttons to withdraw or deposit money. Validate the form such that 
+  
+  Design a HTML form that displays user's current balance, an input field to enter amount and buttons to withdraw or deposit money. Validate the form such that 
     i) Negative amount cannot be entered and Users cannot withdraw more than 5000 at one time 
     ii) Users cannot withdraw amount greater than their balance and cannot deposit more than 10000 at one time. Also users can perform at most 5 transactions. 
     Update the balance accordingly and ensure relevant data is not lost on closing the browser.
  
 2. ShoppingCart
+  
   Shopping Cart Application: Design a simple Shopping Cart application which allows users to add items to their cart from a list of products. Allow users to view their cart (items and quantities of each). Ensure that items in the cart persist even after closing the application. On selecting buy, print out a bill of items in the cart. Perform any necessary validation. Demonstrate data persistence even after the browser is closed.
   
 3.StudentReg
+
   Design any case study that creates and validates a HTML form. On the server side, use Python to display the details entered by the user at the client side along with appropriate validation messages. Use Display appropriate messages if error occurs, and redirect to the another HTML page if successful.
