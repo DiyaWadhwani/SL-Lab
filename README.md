@@ -3,32 +3,45 @@ This repository contains all javascript and python programs required for the cou
 partA :
 
   javascriptProgs :
+  
     1. ChangeStr.html
       To change a string, encryption
+      
     2. LetterSurr.html
       To check whether a letter is surrounded with + symbols, returns true or false
+    
     3. HourMin.html
       To convert given time to hour:min
+    
     4. Age.html
       To find the age of user, takes DOB as input
+    
     5. OddRange.html
       The find odd numbers in a given range of numbers
+    
     6. LongestWord.html
       To find the length of the longest word in a sentence
+    
     7. DivisibleBy3or7.html
       To check if a number input by user is divisibly by 3 or 7
+    
     8. Buttons.html
       2 buttons which have different functions
   
   pythonProgs:
+    
     1. ChangeStr.py
       To change a string, encryption
+    
     2. LetterSurr.py
       To check whether a letter is surrounded with + symbols, returns true or false
+    
     3. HourMin.py
       To convert given time to hour:min
+    
     4. Age.py
       To find the age of user, takes DOB as input
+    
     5. OddRange.py
       The find odd numbers in a given range of numbers
   
